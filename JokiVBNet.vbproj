@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0D5088D-6F5B-4BCE-A21F-AE33D04DFC70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>JokiVBNet.My.MyApplication</StartupObject>
+    <RootNamespace>JokiVBNet</RootNamespace>
+    <AssemblyName>JokiVBNet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>JokiVBNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>JokiVBNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.33.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector NET 8.0.33\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAkun.Designer.vb">
+      <DependentUpon>FormAkun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAkun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAkunProfile.Designer.vb">
+      <DependentUpon>FormAkunProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAkunProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiagnosis.Designer.vb">
+      <DependentUpon>FormDiagnosis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiagnosis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHasilDiagnosis.Designer.vb">
+      <DependentUpon>FormHasilDiagnosis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHasilDiagnosis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPertanyaan.Designer.vb">
+      <DependentUpon>FormPertanyaan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPertanyaan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfile.Designer.vb">
+      <DependentUpon>FormProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegister.Designer.vb">
+      <DependentUpon>FormRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSistem.Designer.vb">
+      <DependentUpon>FormSistem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSistem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTentang.Designer.vb">
+      <DependentUpon>FormTentang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTentang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUtama.vb" />
+    <Compile Include="mdlFungsiUmunHelpers.vb" />
+    <Compile Include="ModuleDB.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SessionModule.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAkun.resx">
+      <DependentUpon>FormAkun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAkunProfile.resx">
+      <DependentUpon>FormAkunProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiagnosis.resx">
+      <DependentUpon>FormDiagnosis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHasilDiagnosis.resx">
+      <DependentUpon>FormHasilDiagnosis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPertanyaan.resx">
+      <DependentUpon>FormPertanyaan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfile.resx">
+      <DependentUpon>FormProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegister.resx">
+      <DependentUpon>FormRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSistem.resx">
+      <DependentUpon>FormSistem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTentang.resx">
+      <DependentUpon>FormTentang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

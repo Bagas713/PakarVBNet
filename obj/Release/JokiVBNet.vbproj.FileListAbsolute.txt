@@ -1,0 +1,14 @@
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\bin\Release\JokiVBNet.exe.config
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\bin\Release\JokiVBNet.exe
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\bin\Release\JokiVBNet.pdb
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\bin\Release\JokiVBNet.xml
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.vbproj.AssemblyReference.cache
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.vbproj.SuggestedBindingRedirects.cache
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.Form1.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.Form2.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.Resources.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.vbproj.GenerateResource.cache
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.vbproj.CoreCompileInputs.cache
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.exe
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.xml
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Release\JokiVBNet.pdb
