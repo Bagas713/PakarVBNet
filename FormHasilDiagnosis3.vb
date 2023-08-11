@@ -1,20 +1,17 @@
-﻿Imports System.Reflection.Emit
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
-Imports Microsoft.VisualBasic.ApplicationServices
+﻿Public Class FormHasilDiagnosis3
+    Private Sub FormHasilDiagnosis3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-Public Class FormHasilDiagnosis
+    End Sub
+
     Private selectedKerusakan As String
 
     Public Sub New(selectedKerusakan As String)
         InitializeComponent()
         Me.selectedKerusakan = selectedKerusakan
-        LoadHasilDiagnosis()
+        LoadHasilDiagnosis3()
     End Sub
 
-    Public Property username As String
-    Public Property loggedInUserId As Integer
-
-    Private Sub LoadHasilDiagnosis()
+    Private Sub LoadHasilDiagnosis3()
         ' Tentukan hasil diagnosis berdasarkan jenis kerusakan terpilih
         Select Case selectedKerusakan
             Case "Permukaan Tidak Rapat"
@@ -87,13 +84,6 @@ Public Class FormHasilDiagnosis
         End Select
     End Sub
 
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-        Form2.Show()
-        Close()
-
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim hasilDiagnosis As String = LabelHasilDiagnosis.Text
 
@@ -102,6 +92,6 @@ Public Class FormHasilDiagnosis
 
         ' Cek peran pengguna yang berhasil login
         Me.Hide()
-        Form2.Show()
+        FormPakar.Show()
     End Sub
 End Class

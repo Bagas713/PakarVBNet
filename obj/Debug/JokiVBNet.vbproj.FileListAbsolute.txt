@@ -28,3 +28,10 @@ D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormAkun.resource
 D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormHasilDiagnosis.resources
 D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormPertanyaan.resources
 D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormAkunProfile.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormPakar.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormPakarDiagnosis.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormUlasan.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormDiagnosis2.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormHasilDiagnosis2.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormDiagnosis3.resources
+D:\Project\Joki VB NET\JokiVBNet\JokiVBNet\obj\Debug\JokiVBNet.FormHasilDiagnosis3.resources

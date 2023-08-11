@@ -1,7 +1,7 @@
 ﻿Public Class Form2
     Public Shared Property Instance As Form2
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         FormSistem.Show()
         Me.Hide()
     End Sub
@@ -12,7 +12,7 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim result As DialogResult = MessageBox.Show("Apakah Anda yakin ingin keluar?", "Konfirmasi Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim result As DialogResult = MessageBox.Show("Apakah Anda yakin ingin keluar?", "Konfirmasi Keluar", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         ' Cek apakah pengguna menekan tombol "Yes" pada MessageBox
         If result = DialogResult.Yes Then

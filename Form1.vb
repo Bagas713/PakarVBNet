@@ -28,11 +28,18 @@ Public Class Form1
             If level = "admin" Then
                 ' Jika admin yang login, tampilkan form Akun
                 Dim formAkun As New FormAkun()
+                Me.Hide()
                 formAkun.Show()
-            Else
+            ElseIf level = "user" Then
                 ' Jika user biasa yang login, tampilkan form Profile
                 Dim formProfile As New FormProfile()
+                Me.Hide()
                 Form2.Show()
+            Else 
+                Dim formPakar As New FormPakar()
+                Me.Hide()
+                formPakar.Show()
+
             End If
 
             ' Tutup form login setelah berhasil login dan menampilkan form sesuai peran
@@ -45,8 +52,9 @@ Public Class Form1
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        FormRegister.Show()
         Me.Hide()
+        FormRegister.Show()
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click

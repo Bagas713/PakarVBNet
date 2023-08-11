@@ -108,10 +108,46 @@
     <Compile Include="FormDiagnosis.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormDiagnosis2.Designer.vb">
+      <DependentUpon>FormDiagnosis2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiagnosis2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiagnosis3.Designer.vb">
+      <DependentUpon>FormDiagnosis3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiagnosis3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormHasilDiagnosis.Designer.vb">
       <DependentUpon>FormHasilDiagnosis.vb</DependentUpon>
     </Compile>
     <Compile Include="FormHasilDiagnosis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHasilDiagnosis2.Designer.vb">
+      <DependentUpon>FormHasilDiagnosis2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHasilDiagnosis2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHasilDiagnosis3.Designer.vb">
+      <DependentUpon>FormHasilDiagnosis3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHasilDiagnosis3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPakar.Designer.vb">
+      <DependentUpon>FormPakar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPakar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPakarDiagnosis.Designer.vb">
+      <DependentUpon>FormPakarDiagnosis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPakarDiagnosis.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPertanyaan.Designer.vb">
@@ -142,6 +178,12 @@
       <DependentUpon>FormTentang.vb</DependentUpon>
     </Compile>
     <Compile Include="FormTentang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUlasan.Designer.vb">
+      <DependentUpon>FormUlasan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUlasan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormUtama.vb" />
@@ -180,8 +222,26 @@
     <EmbeddedResource Include="FormDiagnosis.resx">
       <DependentUpon>FormDiagnosis.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDiagnosis2.resx">
+      <DependentUpon>FormDiagnosis2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiagnosis3.resx">
+      <DependentUpon>FormDiagnosis3.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHasilDiagnosis.resx">
       <DependentUpon>FormHasilDiagnosis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHasilDiagnosis2.resx">
+      <DependentUpon>FormHasilDiagnosis2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHasilDiagnosis3.resx">
+      <DependentUpon>FormHasilDiagnosis3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPakar.resx">
+      <DependentUpon>FormPakar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPakarDiagnosis.resx">
+      <DependentUpon>FormPakarDiagnosis.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPertanyaan.resx">
       <DependentUpon>FormPertanyaan.vb</DependentUpon>
@@ -197,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTentang.resx">
       <DependentUpon>FormTentang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUlasan.resx">
+      <DependentUpon>FormUlasan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

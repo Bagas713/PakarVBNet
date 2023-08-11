@@ -25,8 +25,9 @@ Partial Class FormDiagnosis
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormDiagnosis))
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,25 +54,25 @@ Partial Class FormDiagnosis
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Pilih Kerusakan"
         '
-        'Button1
-        '
-        Me.Button1.ForeColor = System.Drawing.Color.Tomato
-        Me.Button1.Location = New System.Drawing.Point(33, 167)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 33)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Button2
         '
         Me.Button2.ForeColor = System.Drawing.Color.LimeGreen
         Me.Button2.Location = New System.Drawing.Point(467, 167)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(95, 33)
+        Me.Button2.Size = New System.Drawing.Size(99, 30)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Submit"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.ForeColor = System.Drawing.Color.Tomato
+        Me.Button1.Location = New System.Drawing.Point(33, 167)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(99, 30)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Kembali"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'FormDiagnosis
         '
@@ -93,4 +94,5 @@ Partial Class FormDiagnosis
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

@@ -35,13 +35,13 @@ Partial Class FormTentang
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -182,6 +182,51 @@ Partial Class FormTentang
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Perancang"
         '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(67, 264)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(169, 16)
+        Me.Label17.TabIndex = 16
+        Me.Label17.Text = "Universitas Gunadarma"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(67, 218)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(194, 16)
+        Me.Label16.TabIndex = 15
+        Me.Label16.Text = "Fakultas Teknologi Industri"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(67, 173)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(166, 16)
+        Me.Label15.TabIndex = 14
+        Me.Label15.Text = "Jurusan Teknik Industri" & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(67, 132)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(129, 16)
+        Me.Label14.TabIndex = 13
+        Me.Label14.Text = "Kelas       :   4ID02" & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(67, 82)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(154, 16)
+        Me.Label13.TabIndex = 12
+        Me.Label13.Text = "NIM          :   34419594"
+        '
         'Label12
         '
         Me.Label12.AutoSize = True
@@ -193,58 +238,14 @@ Partial Class FormTentang
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Tomato
         Me.Button1.Location = New System.Drawing.Point(692, 371)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 35)
         Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Back"
+        Me.Button1.Text = "Kembali"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(67, 82)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(154, 16)
-        Me.Label13.TabIndex = 12
-        Me.Label13.Text = "NIM          :   34419594"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(67, 132)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(129, 16)
-        Me.Label14.TabIndex = 13
-        Me.Label14.Text = "Kelas       :   4ID02" & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(67, 173)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(166, 16)
-        Me.Label15.TabIndex = 14
-        Me.Label15.Text = "Jurusan Teknik Industri" & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(67, 218)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(194, 16)
-        Me.Label16.TabIndex = 15
-        Me.Label16.Text = "Fakultas Teknologi Industri"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(67, 264)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(169, 16)
-        Me.Label17.TabIndex = 16
-        Me.Label17.Text = "Universitas Gunadarma"
         '
         'FormTentang
         '

@@ -1,36 +1,32 @@
-﻿Imports MySql.Data.MySqlClient
-Public Class FormAkun
-    Public Shared Property Instance As FormAkun
+﻿Public Class FormPakar
+    Private Sub FormPakar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        FormDiagnosis2.Show()
-        Me.Close()
     End Sub
 
-    Private Sub FormAkun_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        FormAkun.Instance = Me
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        FormTentang.Show()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ' Dapatkan ID pengguna yang berhasil login
+        Dim userId As Integer = Form1.loggedInUserId
 
         ' Buka FormProfile dan berikan ID pengguna yang berhasil login
         Dim formProfile As New FormProfile()
-        FormAkunProfile.Show()
+        formProfile.userId = userId
+        formProfile.Show()
         Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        FormSistem.Show()
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
+        FormPakarDiagnosis.Show()
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        FormTentang.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim result As DialogResult = MessageBox.Show("Apakah Anda yakin ingin keluar?", "Konfirmasi Keluar", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         ' Cek apakah pengguna menekan tombol "Yes" pada MessageBox
@@ -40,7 +36,7 @@ Public Class FormAkun
 
             ' Tampilkan kembali form login setelah logout
             Form1.Show()
-            Hide()
+            Me.Close()
         End If
     End Sub
 End Class

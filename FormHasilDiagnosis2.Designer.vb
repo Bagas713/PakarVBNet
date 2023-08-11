@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormHasilDiagnosis
+Partial Class FormHasilDiagnosis2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,11 +22,12 @@ Partial Class FormHasilDiagnosis
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormHasilDiagnosis))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormHasilDiagnosis2))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.LabelHasilDiagnosis = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LabelHasilDiagnosis = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -34,43 +35,46 @@ Partial Class FormHasilDiagnosis
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.LabelHasilDiagnosis)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(805, 394)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(642, 334)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(141, 42)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Simpan"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'LabelHasilDiagnosis
-        '
-        Me.LabelHasilDiagnosis.AutoSize = True
-        Me.LabelHasilDiagnosis.Location = New System.Drawing.Point(319, 21)
-        Me.LabelHasilDiagnosis.Name = "LabelHasilDiagnosis"
-        Me.LabelHasilDiagnosis.Size = New System.Drawing.Size(48, 16)
-        Me.LabelHasilDiagnosis.TabIndex = 0
-        Me.LabelHasilDiagnosis.Text = "Label1"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(16, 21)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(282, 355)
-        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'FormHasilDiagnosis
+        'LabelHasilDiagnosis
+        '
+        Me.LabelHasilDiagnosis.AutoSize = True
+        Me.LabelHasilDiagnosis.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.LabelHasilDiagnosis.Location = New System.Drawing.Point(320, 20)
+        Me.LabelHasilDiagnosis.Name = "LabelHasilDiagnosis"
+        Me.LabelHasilDiagnosis.Size = New System.Drawing.Size(48, 16)
+        Me.LabelHasilDiagnosis.TabIndex = 1
+        Me.LabelHasilDiagnosis.Text = "Label1"
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button1.Location = New System.Drawing.Point(642, 334)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(141, 42)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Simpan"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'FormHasilDiagnosis2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -78,9 +82,9 @@ Partial Class FormHasilDiagnosis
         Me.ClientSize = New System.Drawing.Size(829, 418)
         Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "FormHasilDiagnosis"
+        Me.Name = "FormHasilDiagnosis2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Hasil Diagnosis"
+        Me.Text = "Hasil Diagnosis - Admin"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -89,7 +93,8 @@ Partial Class FormHasilDiagnosis
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LabelHasilDiagnosis As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

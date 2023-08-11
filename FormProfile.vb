@@ -2,6 +2,7 @@
 Imports Mysqlx.XDevAPI.Common
 
 Public Class FormProfile
+    Friend loggedInUserId As Integer
     Public Shared Property Instance As FormProfile
     Public Property userId As Integer
     Private Sub FormProfile_Load(sender As Object, e As EventArgs) Handles MyBase.Load

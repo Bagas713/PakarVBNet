@@ -77,9 +77,9 @@ Partial Class FormProfile
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(37, 182)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(145, 20)
+        Me.Label3.Size = New System.Drawing.Size(146, 20)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Password        :"
+        Me.Label3.Text = "Sandi              :"
         '
         'Label2
         '
@@ -88,7 +88,7 @@ Partial Class FormProfile
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(148, 20)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Username        :"
+        Me.Label2.Text = "ID Nama          :"
         '
         'Label1
         '
@@ -103,22 +103,22 @@ Partial Class FormProfile
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Tomato
-        Me.Button1.Location = New System.Drawing.Point(78, 315)
+        Me.Button1.Location = New System.Drawing.Point(78, 332)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(84, 43)
+        Me.Button1.Size = New System.Drawing.Size(99, 30)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Back"
+        Me.Button1.Text = "Kembali"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.ForestGreen
-        Me.Button2.Location = New System.Drawing.Point(648, 314)
+        Me.Button2.Location = New System.Drawing.Point(644, 332)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 43)
+        Me.Button2.Size = New System.Drawing.Size(99, 30)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Save"
+        Me.Button2.Text = "Simpan"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'FormProfile

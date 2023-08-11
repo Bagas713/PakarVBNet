@@ -23,18 +23,18 @@ Partial Class FormAkunProfile
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -60,46 +60,51 @@ Partial Class FormAkunProfile
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Profile"
         '
-        'Label1
+        'ComboBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(35, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(163, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nama Lengkap    :"
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"admin", "user", "pakar"})
+        Me.ComboBox1.Location = New System.Drawing.Point(217, 146)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(466, 28)
+        Me.ComboBox1.TabIndex = 10
         '
-        'Label2
+        'Label4
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(32, 69)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(166, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Username           :"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(35, 146)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(162, 20)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Tingkatan           :"
         '
-        'Label3
+        'Button3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(35, 108)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(163, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Password           :"
+        Me.Button3.ForeColor = System.Drawing.Color.Tomato
+        Me.Button3.Location = New System.Drawing.Point(26, 196)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(99, 30)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Kembali"
+        Me.Button3.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'Button2
         '
-        Me.TextBox1.Location = New System.Drawing.Point(217, 26)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(466, 27)
-        Me.TextBox1.TabIndex = 3
+        Me.Button2.Location = New System.Drawing.Point(608, 196)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(99, 30)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Hapus"
+        Me.Button2.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'Button1
         '
-        Me.TextBox2.Location = New System.Drawing.Point(217, 66)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(466, 27)
-        Me.TextBox2.TabIndex = 4
+        Me.Button1.Location = New System.Drawing.Point(500, 196)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(99, 30)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Simpan"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox3
         '
@@ -108,6 +113,47 @@ Partial Class FormAkunProfile
         Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox3.Size = New System.Drawing.Size(466, 27)
         Me.TextBox3.TabIndex = 5
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(217, 66)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(466, 27)
+        Me.TextBox2.TabIndex = 4
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(217, 26)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(466, 27)
+        Me.TextBox1.TabIndex = 3
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(33, 108)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(164, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Sandi                 :"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(38, 66)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(160, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "ID Nama            :"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(35, 29)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(163, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Nama Lengkap    :"
         '
         'DataGridView1
         '
@@ -118,52 +164,6 @@ Partial Class FormAkunProfile
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(746, 139)
         Me.DataGridView1.TabIndex = 6
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(514, 196)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 30)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Save"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(608, 196)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(99, 30)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Delete"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.ForeColor = System.Drawing.Color.Tomato
-        Me.Button3.Location = New System.Drawing.Point(26, 196)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 30)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Back"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(35, 146)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(162, 20)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Level                 :"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"admin", "user"})
-        Me.ComboBox1.Location = New System.Drawing.Point(217, 146)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(466, 28)
-        Me.ComboBox1.TabIndex = 10
         '
         'FormAkunProfile
         '

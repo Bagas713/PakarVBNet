@@ -1,11 +1,17 @@
-﻿Public Class FormPertanyaan
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+
+Public Class FormPertanyaan
     Private selectedKerusakan As String
 
     Public Sub New(selectedKerusakan As String)
         InitializeComponent()
         Me.selectedKerusakan = selectedKerusakan
         LoadPertanyaan()
+        ' Cek peran pengguna yang berhasil login
+        Dim level As String = GetUserRoleByUsername(username)
     End Sub
+
+    Public Property username As String
 
     Private Sub LoadPertanyaan()
         ' Tentukan pertanyaan tambahan berdasarkan jenis kerusakan terpilih

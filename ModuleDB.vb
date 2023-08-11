@@ -324,6 +324,25 @@ Module mdlFungsiUmun
         ' ...
     End Sub
 
+    Public Sub SimpanUlasan(ulasan As String)
+        Try
+            bukaDB()
+
+            ' Query SQL untuk menyimpan ulasan ke dalam tabel ulasan
+            Dim query As String = "INSERT INTO ulasan (ulasan) VALUES (@ulasan)"
+            Using myCommand As New MySqlCommand(query, db)
+                myCommand.Parameters.AddWithValue("@ulasan", ulasan)
+                myCommand.ExecuteNonQuery()
+            End Using
+
+            MessageBox.Show("Ulasan berhasil disimpan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            
+        Catch ex As Exception
+            MessageBox.Show("Terjadi kesalahan saat menyimpan ulasan: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            tutupDB()
+        End Try
+    End Sub
 
 
 End Module

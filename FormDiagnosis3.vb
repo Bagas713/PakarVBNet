@@ -1,24 +1,16 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
-
-Public Class FormDiagnosis
-
-    Private userId As Integer ' Field untuk menyimpan userId pengguna yang login
-    Public Property username As String
-
-    Private Sub FormDiagnosis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class FormDiagnosis3
+    Private Sub FormDiagnosis3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Tambahkan daftar pertanyaan ke dalam ComboBoxPertanyaan
         ComboBox1.Items.Add("Permukaan Tidak Rapat")
         ComboBox1.Items.Add("Goresan Pada Lubang")
         ComboBox1.Items.Add("Bentuk Lubang Baut Tidak Sesuai")
         ComboBox1.Items.Add("Diameter Bagian Atas Tidak Sesuai")
         ComboBox1.Items.Add("Diameter Bagian Bawah Tidak Sesuai")
-        ' Cek peran pengguna yang berhasil login
-        Dim level As String = GetUserRoleByUsername(username)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form2.Show()
-        Me.Close()
+        Me.Hide()
+        FormPakar.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -29,10 +21,10 @@ Public Class FormDiagnosis
 
             If result = DialogResult.Yes Then
                 ' Tampilkan form hasil diagnosis dengan jenis kerusakan terpilih sebagai parameter
-                Dim formHasilDiagnosis As New FormHasilDiagnosis(selectedKerusakan)
+                Dim formHasilDiagnosis3 As New FormHasilDiagnosis3(selectedKerusakan)
                 Me.Hide()
 
-                formHasilDiagnosis.ShowDialog()
+                formHasilDiagnosis3.ShowDialog()
             Else
                 ' Tampilkan form pertanyaan tambahan berdasarkan jenis kerusakan terpilih
 
@@ -41,10 +33,5 @@ Public Class FormDiagnosis
         Else
             MessageBox.Show("Silakan pilih jenis kerusakan terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
-    End Sub
-
-    ' Method untuk mengatur nilai userId dari Form1 (atau Form sebelumnya)
-    Public Sub SetUserId(userId As Integer)
-        Me.userId = userId
     End Sub
 End Class

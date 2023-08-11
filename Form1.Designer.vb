@@ -97,9 +97,9 @@ Partial Class Form1
         '
         Me.Button2.Location = New System.Drawing.Point(325, 202)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(101, 47)
+        Me.Button2.Size = New System.Drawing.Size(87, 47)
         Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Register"
+        Me.Button2.Text = "Daftar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -108,7 +108,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(87, 47)
         Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Login"
+        Me.Button1.Text = "Masuk"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label5
@@ -116,18 +116,18 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(64, 123)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(99, 22)
+        Me.Label5.Size = New System.Drawing.Size(96, 22)
         Me.Label5.TabIndex = 6
-        Me.Label5.Text = "Password :"
+        Me.Label5.Text = "Sandi       :"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(64, 66)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 22)
+        Me.Label4.Size = New System.Drawing.Size(97, 22)
         Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Username :"
+        Me.Label4.Text = "ID Nama  :"
         '
         'TextBox2
         '

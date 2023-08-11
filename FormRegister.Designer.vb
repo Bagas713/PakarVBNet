@@ -52,7 +52,7 @@ Partial Class FormRegister
         Me.GroupBox1.Size = New System.Drawing.Size(708, 329)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Register"
+        Me.GroupBox1.Text = "Pendaftaran"
         '
         'GroupBox2
         '
@@ -112,20 +112,20 @@ Partial Class FormRegister
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(14, 152)
+        Me.Label4.Location = New System.Drawing.Point(11, 152)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(179, 20)
+        Me.Label4.Size = New System.Drawing.Size(182, 20)
         Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Re-Type Password :"
+        Me.Label4.Text = "Ketik Ulang Sandi   :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(12, 110)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(181, 20)
+        Me.Label3.Size = New System.Drawing.Size(182, 20)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Password              :"
+        Me.Label3.Text = "Sandi                    :"
         '
         'Label1
         '
@@ -143,7 +143,7 @@ Partial Class FormRegister
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(178, 20)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Username             :"
+        Me.Label2.Text = "ID Nama               :"
         '
         'LinkLabel1
         '
@@ -162,7 +162,7 @@ Partial Class FormRegister
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(84, 37)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Login"
+        Me.Button1.Text = "Masuk"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'FormRegister

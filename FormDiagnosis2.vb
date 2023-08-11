@@ -1,24 +1,17 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
-
-Public Class FormDiagnosis
-
-    Private userId As Integer ' Field untuk menyimpan userId pengguna yang login
-    Public Property username As String
-
-    Private Sub FormDiagnosis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class FormDiagnosis2
+    Private Sub FormDiagnosis2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Tambahkan daftar pertanyaan ke dalam ComboBoxPertanyaan
         ComboBox1.Items.Add("Permukaan Tidak Rapat")
         ComboBox1.Items.Add("Goresan Pada Lubang")
         ComboBox1.Items.Add("Bentuk Lubang Baut Tidak Sesuai")
         ComboBox1.Items.Add("Diameter Bagian Atas Tidak Sesuai")
         ComboBox1.Items.Add("Diameter Bagian Bawah Tidak Sesuai")
-        ' Cek peran pengguna yang berhasil login
-        Dim level As String = GetUserRoleByUsername(username)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form2.Show()
-        Me.Close()
+        Me.Hide()
+        FormAkun.Show()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -29,10 +22,10 @@ Public Class FormDiagnosis
 
             If result = DialogResult.Yes Then
                 ' Tampilkan form hasil diagnosis dengan jenis kerusakan terpilih sebagai parameter
-                Dim formHasilDiagnosis As New FormHasilDiagnosis(selectedKerusakan)
+                Dim formHasilDiagnosis2 As New FormHasilDiagnosis2(selectedKerusakan)
                 Me.Hide()
 
-                formHasilDiagnosis.ShowDialog()
+                FormHasilDiagnosis2.ShowDialog()
             Else
                 ' Tampilkan form pertanyaan tambahan berdasarkan jenis kerusakan terpilih
 
@@ -43,8 +36,11 @@ Public Class FormDiagnosis
         End If
     End Sub
 
-    ' Method untuk mengatur nilai userId dari Form1 (atau Form sebelumnya)
-    Public Sub SetUserId(userId As Integer)
-        Me.userId = userId
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
     End Sub
 End Class
